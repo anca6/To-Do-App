@@ -1,0 +1,76 @@
+/* General body styles */
+body {
+    font-family: sans-serif; 
+    background-color: #cebebe;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Main app container */
+.app {
+    width: 300px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    border: 5px solid #6D2E46; 
+    border-radius: 20px; 
+    padding: 15px;
+    background-color: #F3EDE2; 
+    overflow-y: scroll; /* Enables vertical scrolling if content overflows */
+}
+
+/* Hides scrollbar for a cleaner UI */
+.app::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+/* Add New Task button */
+#addNew {
+    display: flex; 
+    background-color: #BEC397; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 7px 10px; 
+    border-radius: 8px; 
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Plus icon styling inside the Add New button */
+.fa-plus {
+    background-color: #9BAB5F; 
+    padding: 3.5px;
+    border-radius: 4px;
+}
+
+/* Task container */
+#tasks {
+    display: grid; 
+    gap: 14px;
+}
+
+/* Individual task item */
+#tasks div {
+    background-color: #BEC397; 
+    border: 3px solid #9BAB5F;
+    padding: 5px;
+    border-radius: 6px; 
+    display: grid;
+    gap: 4px; 
+}
+
+/* Container for edit and delete icons */
+.options {
+    justify-self: center; 
+    display: flex;
+    gap: 20px;
+}
+
+/* Edit and delete icons */
+.options i {
+    cursor: pointer; 
+}
+
+/* Error message */
+#msg {
+    color: red; 
+}
